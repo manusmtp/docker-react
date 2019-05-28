@@ -1,0 +1,16 @@
+# this is the development version of the dockerfile
+
+FROM node:alpine
+
+
+WORKDIR '/app'
+
+
+COPY package.json .
+
+
+RUN npm install
+
+
+
+CMD ["npm","run","start"]
